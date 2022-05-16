@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     $('.post2025climate_data').popover({
         placement: 'right',
-        trigger: 'click',
+        trigger: 'hover',
         title: 'New Collective Quantified Goal on Climate Finance (NCQG)',
         html: true,
         content: function () {
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     $('.new_goal_submissions').popover({
         placement: 'right',
-        trigger: 'click',
+        trigger: 'hover',
         html: true,
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
