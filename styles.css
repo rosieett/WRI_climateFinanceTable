@@ -27,6 +27,13 @@ main {
     width: 75%;
 }
 
+@media (max-width: 900px) {
+    .legend img {
+        display: flex;
+        width: 100%;
+    }
+}
+
 .center {
     display: flex;
     justify-content: center;
