@@ -1,12 +1,18 @@
-.table_area {
+main {
     width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.table_area {
+    width: 100%;
 }
 
 .table_area {
     margin: 0 auto;
     overflow: scroll;
     height: 70vh;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .table {
@@ -14,6 +20,22 @@
     margin: 0 !important;
     text-align: left;
     position: relative;
+}
+
+.legend img {
+    display: flex;
+    width: 100%;
+}
+
+.text {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.small {
+    font-size: .5rem;
+
 }
 
 tbody td {
