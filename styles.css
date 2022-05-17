@@ -24,14 +24,29 @@ main {
 
 .legend img {
     display: flex;
-    width: 100%;
+    width: 75%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
 }
 
 .text {
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
     padding-bottom: 50px;
 }
+
+@media (max-width: 1200px) {
+    .text {
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+}
+
 
 .small {
     font-size: .5rem;
