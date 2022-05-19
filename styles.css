@@ -56,7 +56,12 @@ main {
 tbody td {
     vertical-align: middle;
     font-weight: 500;
+    font-size: .75rem;
     text-align: center;
+}
+
+th {
+    font-size: .75rem;
 }
 
 /* .table>:not(:first-child) {
