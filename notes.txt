@@ -8,3 +8,12 @@ Next Iteration
 [] add in lines to end of each year
 [x] fugyre out look for key events
 [x] fix phase look
+
+Information for popups:
+[] For workstream titles, add in “Formally known as:”
+[] Ignore column N
+[] Fix the Key Event Timeline – they’re in Q1 – fix timeline
+[] Figure out way to link to key events better
+[] For the full years – make dashed line instead of full fill
+ 
+MAKE LEGEND

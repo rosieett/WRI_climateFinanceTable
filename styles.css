@@ -15,12 +15,7 @@ main {
     margin-top: 20px;
 }
 
-.table {
-    overflow: scroll;
-    margin: 0 !important;
-    text-align: left;
-    position: relative;
-}
+
 
 .legend img {
     display: flex;
@@ -37,7 +32,6 @@ main {
 .center {
     display: flex;
     justify-content: center;
-
 }
 
 .text {
@@ -57,7 +51,6 @@ main {
 
 .small {
     font-size: .75rem;
-
 }
 
 tbody td {
@@ -66,23 +59,29 @@ tbody td {
     text-align: center;
 }
 
-.table>:not(:first-child) {
+/* .table>:not(:first-child) {
     border-top: none;
-}
-
+} */
+/* 
 .table>:not(caption)>*>* {
     border-bottom-width: 5px;
     border-top-width: 5px;
     border-left-width: 5px;
     border-color: white;
-}
+} */
 
-td {
+/* td {
     border-collapse: collapse;
     border-color: white;
+} */
+
+.table {
+    overflow: scroll;
+    margin: 0 !important;
+    text-align: left;
+    position: relative;
+    border-collapse: collapse !important;
 }
-
-
 
 /* HEADER */
 
@@ -105,21 +104,22 @@ thead {
     border-right: 0px;
 }
 
-.q_header th {
-    background-color: #939598;
+.q_header {
+    background-color: #6b6b6b;
     color: white;
-    border-bottom-width: 0 !important;
+    /* border-bottom-width: 0 !important;
     border-top-width: 0 !important;
-    border-left-width: 0 !important;
+    border-left-width: 0 !important; */
     font-weight: bold;
     text-align: center;
     left: 0;
 }
 
-.q_header th:first-child {
+
+/* .q_header th:first-child {
     background-color: white;
     border-right: 0px;
-}
+} */
 
 .q_header_line {
     border-left-width: 5px !important;
@@ -128,7 +128,7 @@ thead {
 
 /* Internals */
 
-#post_2025_climate,
+/* #post_2025_climate,
 #climate_finance_reporting,
 #long_term_finance,
 #standing_committee,
@@ -142,7 +142,7 @@ thead {
     border-left: 0px;
     padding: 13px;
     margin-bottom: 13px;
-}
+} */
 
 .submission {
     background: #f2b225 !important;
@@ -186,11 +186,11 @@ thead {
     text-align: center;
 }
 
-td[colspan="2"],
+/* td[colspan="2"],
 td[colspan="3"],
 td[colspan="4"] {
     text-align: center;
-}
+} */
 
 .separator td {
     background-color: #c8c8c8;
@@ -216,7 +216,7 @@ td[colspan="4"] {
 }
 
 .empty {
-    background-color: white;
+    background-color: white !important;
 }
 
 
@@ -291,4 +291,25 @@ td[colspan="4"] {
     display: inline-block;
     margin-right: 2px;
     /* align-items: center; */
+}
+
+.quarter {
+    background-color: rgb(176, 176, 176) !important;
+    color: white;
+    font-weight: 700;
+}
+
+.year {
+    background-color: rgb(119, 119, 119) !important;
+    color: white;
+    font-weight: 700;
+}
+
+.dashed {
+    border-top: 5px dashed #1f808d !important;
+    border-right: 5px dashed #1f808d !important;
+    border-bottom: 5px dashed #1f808d !important;
+    border-left: 5px dashed #1f808d !important;
+    margin-top: 10px;
+    padding: 10px;
 }
