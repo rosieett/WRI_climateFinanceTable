@@ -4,19 +4,6 @@ main {
     padding-top: 100px;
 }
 
-.table_area {
-    width: 100%;
-}
-
-.table_area {
-    margin: 0 auto;
-    overflow: scroll;
-    height: 70vh;
-    margin-top: 20px;
-}
-
-
-
 .legend img {
     display: flex;
     width: 75%;
@@ -29,9 +16,13 @@ main {
     }
 }
 
-.center {
-    display: flex;
-    justify-content: center;
+
+.table_area {
+    width: 100%;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 70vh;
+    margin-top: 20px;
 }
 
 .text {
@@ -48,83 +39,79 @@ main {
     }
 }
 
-
 .small {
     font-size: .75rem;
 }
 
-tbody td {
-    vertical-align: middle;
-    font-weight: 500;
-    font-size: .75rem;
-    text-align: center;
-}
-
-th {
-    font-size: .75rem;
-}
-
-/* .table>:not(:first-child) {
-    border-top: none;
-} */
-/* 
-.table>:not(caption)>*>* {
-    border-bottom-width: 5px;
-    border-top-width: 5px;
-    border-left-width: 5px;
-    border-color: white;
+/* .table>:not(caption)>*>* {
+    width: 300px;
 } */
 
-/* td {
-    border-collapse: collapse;
-    border-color: white;
-} */
+
+
+
+/* TABLE */
 
 .table {
     overflow: scroll;
     margin: 0 !important;
     text-align: left;
     position: relative;
-    border-collapse: collapse !important;
+    border-collapse: separate;
+    border-spacing: 0px 2px;
+}
+
+#table {
+    background-color: #fff;
 }
 
 /* HEADER */
 
 thead {
     background: #555;
-    position: sticky;
-    top: 0;
+
+
 }
 
-.header th {
+th {
+    font-size: .75rem;
+}
+
+.header {
     background-color: #555;
+    position: sticky;
+    top: 0px;
     color: white;
     font-weight: bold;
     text-align: center;
-    border-style: none !important;
+    border-style: hidden;
 }
 
 .header th:first-child {
     background-color: white;
     border-right: 0px;
+    border-bottom: 0px;
 }
+
 
 .q_header {
     background-color: #6b6b6b;
+    position: sticky;
+    top: 34px;
     color: white;
-    /* border-bottom-width: 0 !important;
-    border-top-width: 0 !important;
-    border-left-width: 0 !important; */
+    border-style: none;
+    border-bottom-width: 0 !important;
     font-weight: bold;
     text-align: center;
-    left: 0;
 }
 
 
-/* .q_header th:first-child {
+.q_header th:first-child {
     background-color: white;
     border-right: 0px;
-} */
+    border-color: white;
+    border-bottom-width: 0px !important;
+}
 
 .q_header_line {
     border-left-width: 5px !important;
@@ -133,63 +120,65 @@ thead {
 
 /* Internals */
 
-/* #post_2025_climate,
+.tableBody td {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: .75rem;
+    text-align: center;
+    border-color: white;
+    border: 2px solid #fff;
+}
+
+.table>:not(:first-child) {
+    border-top: 0px !important;
+}
+
+#post_2025_climate,
 #climate_finance_reporting,
 #long_term_finance,
 #standing_committee,
 #financial_mechanism,
 #loss_damage,
 #adaptation_finance {
-    background-color: #939598;
+    background-color: #919191;
     color: white;
     font-weight: 600;
     left: 0;
     border-left: 0px;
     padding: 13px;
     margin-bottom: 13px;
-} */
+}
 
 .submission {
-    background: #f2b225 !important;
+    background: #aa4893 !important;
     color: white;
     text-align: center;
 }
 
 .meeting {
-    background: #1f808d !important;
+    background: #4d6ab2 !important;
     color: white;
     text-align: center;
 }
 
 .deliberation {
-    background: #ec3162 !important;
+    background: #459ea0 !important;
     color: white;
     text-align: center;
 }
 
 .deadline {
-    background: #ed8027 !important;
+    background: #9b4558 !important;
     color: white;
     text-align: center;
 }
 
 .report {
-    background: #005c3a !important;
+    background: #439b56 !important;
     color: white;
     text-align: center;
 }
 
-.report_input {
-    background: #81c77c !important;
-    color: white;
-    text-align: center;
-}
-
-.report_output {
-    background: #31864b !important;
-    color: white;
-    text-align: center;
-}
 
 /* td[colspan="2"],
 td[colspan="3"],
@@ -200,29 +189,74 @@ td[colspan="4"] {
 .separator td {
     background-color: #c8c8c8;
     border-left-width: 0 !important;
-    padding: 2px !important;
+    padding: 1px !important;
 }
+
 
 .sticky {
     position: sticky;
-    top: 80px;
+    top: 68px;
     border-bottom-width: 0 !important;
+    background-color: white;
 }
 
-.sticky td {
-    border-top-width: 0 !important;
-    border-right-width: 0 !important;
-    border-left-width: 0 !important;
+/* .key_events td {
     background-color: #fff;
-    color: gray;
+    color: rgb(55, 55, 55);
     padding: 4px !important;
     font-weight: 400;
     font-size: 14px;
-}
+} */
 
 .empty {
     background-color: white !important;
 }
+
+
+
+.key_border {
+    /* border-width: 1px; */
+    border: 5px solid rgb(203, 203, 203) !important;
+    border-bottom: 5px !important;
+    color: black;
+    /* background-color: #a9a9a9 !important; */
+}
+
+.td_border {
+    border: 5px solid rgb(203, 203, 203) !important;
+    border-top-width: 5px;
+    color: white;
+}
+
+.report_year {
+    border-top: 5px dashed #439b56 !important;
+    border-right: 5px dashed #439b56 !important;
+    border-bottom: 5px dashed #439b56 !important;
+    border-left: 5px dashed #439b56 !important;
+    background-color: white !important;
+    color: black;
+}
+
+.meeting_year {
+    border-top: 5px dashed #4d6ab2 !important;
+    border-right: 5px dashed #4d6ab2 !important;
+    border-bottom: 5px dashed #4d6ab2 !important;
+    border-left: 5px dashed #4d6ab2 !important;
+    background-color: white !important;
+    color: black;
+}
+
+.submission_year {
+    border-top: 5px dashed #aa4893 !important;
+    border-right: 5px dashed #aa4893 !important;
+    border-bottom: 5px dashed #aa4893 !important;
+    border-left: 5px dashed #aa4893 !important;
+    background-color: white !important;
+    color: black;
+}
+
+
+
 
 
 /* Popup */
@@ -298,23 +332,14 @@ td[colspan="4"] {
     /* align-items: center; */
 }
 
-.quarter {
+/* .quarter {
     background-color: rgb(176, 176, 176) !important;
     color: white;
     font-weight: 700;
-}
+} */
 
-.year {
+/* .year {
     background-color: rgb(119, 119, 119) !important;
     color: white;
     font-weight: 700;
-}
-
-.dashed {
-    border-top: 5px dashed #1f808d !important;
-    border-right: 5px dashed #1f808d !important;
-    border-bottom: 5px dashed #1f808d !important;
-    border-left: 5px dashed #1f808d !important;
-    margin-top: 10px;
-    padding: 10px;
-}
+} */

@@ -7,11 +7,12 @@ $(document).ready(function () {
     });
 
     // workstreams
+    //‘Formally known as: ‘name’ (acronym)’
 
     $('.post2025climate_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'New Collective Quantified Goal on Climate Finance (NCQG)',
+        title: 'Formally known as: New Collective Quantified Goal on Climate Finance (NCQG)',
         html: true,
         content: function () {
             var mysvgdiv = $('<div class="popup_workstream" padding:5px">');
@@ -24,42 +25,42 @@ $(document).ready(function () {
     $('.climate_finance_reporting_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'Transparency of support',
+        title: 'Formally known as: Transparency of support',
         content: 'Transparency on climate finance flows (ex-ante and ex-post) under the UNFCCC is arranged through different reporting modalities',
     });
 
     $('.long_term_finance_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'Long-Term Climate Finance (LTF)',
+        title: 'Formally known as: Long-Term Climate Finance (LTF)',
         content: 'The work programme on long-term climate finance, launched by the Conference of the Parties (COP) at its seventeenth session and extended at its eighteenth session, concluded its work at COP 19 in Warsaw. COP 26 decided that continued discussions on long-term climate finance will conclude in 2027 (source: UNFCCC site)',
     });
 
     $('.standing_committee_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'Standing Committee on Finance (SCF)',
-        content: 'At the sixteenth session of the Conference of Parties (COP), Parties decided to establish a Standing Committee on Finance to assist the COP in exercising its functions in relation to the Financial Mechanism of the Convention (source: UNFCCC site)',
+        title: 'Formally known as: Standing Committee on Finance (SCF)',
+        content: 'At COP16, Parties decided to establish a Standing Committee on Finance to assist the COP in exercising its functions in relation to the Financial Mechanism of the Convention',
     });
 
     $('.financial_mechanism_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'Financial Mechanism of the Convention',
+        title: 'Formally known as: Financial Mechanism of the Convention',
         content: 'To facilitate the provision of financial resources by developed country Parties to assist developing country Parties in implementing the Convention, a financial mechanism was established under the Convention to provide funds to developing country Parties. The GEF and GCF are the Operating Entities of the financial mechanism serving the Convention and the Paris Agreement',
     });
 
     $('.loss_damage_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'Glasgow Dialogue on L&D (L&DFinance)',
+        title: 'Formally known as: Glasgow Dialogue on L&D (L&DFinance)',
         content: 'The Glasgow Dialogue was established at COP26/CMA3 to discuss arrangements for funding activities to avert, minimize and address loss and damage associated with the adverse impacts of climate change',
     });
 
     $('.adaptation_finance_data').popover({
         placement: 'right',
         trigger: 'hover',
-        title: 'Adaptation Finance',
+        title: 'Formally known as: Adaptation Finance',
         content: 'Adaptation finance is finance to adapt to the adverse effects and reduce the impacts of a changing climate. Under the UNFCCC there is an aim to strive for a balanced allocation of mitigation and adaptation finance',
     });
 
@@ -75,7 +76,7 @@ $(document).ready(function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_submission">Submission</div>')
             var text = $('<p class="popup_p">Parties, constituted bodies under the Convention and the Paris Agreement, the operating entities of the Financial Mechanism, climate finance institutions, observers and observer organizations, and other stakeholders, particularly from the private sector, are invited to submit their views on the objectives and elements of the NCQG</p>');
-            var info = $('<p class="subinfo">Date: 15 Februay 2022 <br>Mandate: 9/CMA.3 p.17 (NCQG)</p>');
+            var info = $('<p class="subinfo">Date: 15 Februay 2022 <br>Mandate: 9/CMA.3 p.17</p>');
             var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty"></span><span class="phase_fill"></span><span class="phase_empty"></span><span class="phase_empty"></span>')
             return mysvgdiv.append(milestone)
                 .append(text)
