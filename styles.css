@@ -1,5 +1,5 @@
 main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 100px;
 }
@@ -216,14 +216,14 @@ td[colspan="4"] {
 
 .key_border {
     /* border-width: 1px; */
-    border: 5px solid rgb(203, 203, 203) !important;
-    border-bottom: 5px !important;
+    border: 7px solid rgb(203, 203, 203) !important;
+    /* border-bottom: 5px !important; */
     color: black;
     /* background-color: #a9a9a9 !important; */
 }
 
 .td_border {
-    border: 5px solid rgb(203, 203, 203) !important;
+    border: 7px solid rgb(203, 203, 203) !important;
     border-top-width: 5px;
     color: white;
 }
@@ -268,23 +268,51 @@ td[colspan="4"] {
 }
 
 .popup_deadline {
-    height: 13px;
-    width: 13px;
-    background-color: #00507c;
-    border-radius: 50%;
+    background-color: #9b4558;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
     display: inline-block;
     margin-right: 5px;
 }
 
 .popup_submission {
-    /* height: 13px;
-    width: 13px; */
-    background-color: #f2b225;
+    background-color: #aa4893;
     padding: 5px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
-    /* border-radius: 50%; */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.popup_meeting {
+    background-color: #4d6ab2;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.popup_deliberation {
+    background-color: #459ea0;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.popup_report {
+    background-color: #439b56;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
     display: inline-block;
     margin-right: 5px;
 }
