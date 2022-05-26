@@ -198,7 +198,6 @@ td[colspan="4"] {
     position: sticky;
     top: 68px;
     border-bottom-width: 0 !important;
-    background-color: white;
 }
 
 /* .key_events td {
@@ -213,18 +212,28 @@ td[colspan="4"] {
     background-color: white !important;
 }
 
+.empty_q {
+    background-color: white !important;
+    border-width: 0px;
+}
 
+.key_events {
+    background-color: white !important;
+}
 
 .key_border {
     /* border-width: 1px; */
-    border: 7px solid rgb(203, 203, 203) !important;
+    background-color: rgb(219, 219, 219) !important;
+    border: 7px solid rgb(219, 219, 219) !important;
     /* border-bottom: 5px !important; */
     color: black;
     /* background-color: #a9a9a9 !important; */
 }
 
+.sticky td {}
+
 .td_border {
-    border: 7px solid rgb(203, 203, 203) !important;
+    border: 7px solid rgb(219, 219, 219) !important;
     border-top-width: 5px;
     color: white;
 }
