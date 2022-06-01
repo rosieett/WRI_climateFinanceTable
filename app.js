@@ -1,32 +1,26 @@
+var $ = jQuery;
 $(document).ready(function () {
 
     document.addEventListener('sticky-change', e => {
         const header = e.detail.target; // header became sticky or stopped sticking.
         const sticking = e.detail.stuck; // true when header is sticky.
         document.querySelector('.who-is-sticking').textContent = header.textContent;
-    });
+    })
 
     // workstreams
-    //‘Formally known as: ‘name’ (acronym)’
 
     $('.post2025climate_data').popover({
         placement: 'right',
         trigger: 'hover',
         title: 'Formally known as: New Collective Quantified Goal on Climate Finance (NCQG)',
-        html: true,
-        content: function () {
-            var mysvgdiv = $('<div class="popup_workstream" padding:5px">');
-            var text = $('<p class="popup_p">Parties decided that, prior to 2025, the Conference of the Parties serving as the meeting of the Parties to the Paris Agreement shall set a new collective quantified goal from a floor of USD 100 billion per year, taking into account the needs and priorities of developing countries </p>');
-            return mysvgdiv.append(text);
-
-        },
+        content: 'Parties decided that, prior to 2025, the Conference of the Parties serving as the meeting of the Parties to the Paris Agreement shall set a new collective quantified goal from a floor of USD 100 billion per year, taking into account the needs and priorities of developing countries'
     });
 
     $('.climate_finance_reporting_data').popover({
         placement: 'right',
         trigger: 'hover',
         title: 'Formally known as: Transparency of support',
-        content: 'Transparency on climate finance flows (ex-ante and ex-post) under the UNFCCC is arranged through different reporting modalities',
+        content: 'Transparency on climate finance flows (ex-ante and ex-post) under the UNFCCC is arranged through different reporting modalities'
     });
 
     $('.long_term_finance_data').popover({
@@ -77,11 +71,9 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_submission">Submission</div>')
             var text = $('<p class="popup_p">Parties, constituted bodies under the Convention and the Paris Agreement, the operating entities of the Financial Mechanism, climate finance institutions, observers and observer organizations, and other stakeholders, particularly from the private sector, are invited to submit their views on the objectives and elements of the NCQG</p>');
             var info = $('<p class="subinfo">Date: 15 Februay 2022 <br>Mandate: 9/CMA.3 p.17</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty"></span><span class="phase_fill"></span><span class="phase_empty"></span><span class="phase_empty"></span>')
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
         },
     });
 

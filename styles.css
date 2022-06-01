@@ -1,19 +1,7 @@
 main {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
-    padding-top: 100px;
-}
-
-.legend img {
-    display: flex;
-    width: 75%;
-}
-
-@media (max-width: 900px) {
-    .legend img {
-        display: flex;
-        width: 100%;
-    }
+    padding: 100px 0;
 }
 
 
@@ -25,29 +13,16 @@ main {
     margin-top: 20px;
 }
 
+
 .text {
     margin: 0 auto;
     width: 60%;
     padding-bottom: 50px;
 }
 
-@media (max-width: 1200px) {
-    .text {
-        margin: 0 auto;
-        width: 80%;
-        padding-bottom: 50px;
-    }
-}
-
 .small {
     font-size: .75rem;
 }
-
-/* .table>:not(caption)>*>* {
-    width: 300px;
-} */
-
-
 
 
 /* TABLE */
@@ -58,59 +33,69 @@ main {
     text-align: left;
     position: relative;
     border-collapse: separate;
-    border-spacing: 0px 2px;
-
-}
-
-#table {
-    background-color: #fff;
+    border-spacing: 0px 3px;
 }
 
 /* HEADER */
-
-thead {
-    background: #555;
-
-
+.legend {
+    display: flex;
 }
 
-th {
-    font-size: .75rem;
+.legend_group div,
+.how_to {
+    display: inline-flex;
+    text-align: center;
+    padding: 8px 12px;
+    font-weight: 600;
+    margin: 0px 3px;
+    vertical-align: middle;
+}
+
+.how_to {
+    align-items: center;
+}
+
+.report_legend {
+    border: 2px dashed #aaa !important;
+}
+
+.event_legend {
+    border: 2px solid #ddd !important;
+
 }
 
 .header {
-    background-color: #555;
+    /* background-color: #555; */
+    /* color: #fff; */
     position: sticky;
     top: 0px;
-    color: white;
     font-weight: bold;
     text-align: center;
-    border-style: hidden;
+    background-color: #eee;
+    color: #222;
 }
 
 .header th:first-child {
-    background-color: white;
+    background-color: #fff;
     border-right: 0px;
     border-bottom: 0px;
 }
 
 
 .q_header {
-    background-color: #6b6b6b;
+    background-color: #ddd !important;
+    color: #222;
     position: sticky;
     top: 34px;
-    color: white;
-    border-style: none;
-    border-bottom-width: 0 !important;
     font-weight: bold;
     text-align: center;
 }
 
 
 .q_header th:first-child {
-    background-color: white;
+    background-color: #fff;
     border-right: 0px;
-    border-color: white;
+    border-color: #fff;
     border-bottom-width: 0px !important;
 }
 
@@ -126,12 +111,17 @@ th {
     font-weight: 500;
     font-size: .75rem;
     text-align: center;
-    border-color: white;
+    border-color: #fff;
     border: 2px solid #fff;
+    width: 100px !important;
 }
 
 .table>:not(:first-child) {
     border-top: 0px !important;
+}
+
+td:empty {
+    background-color: #fff !important;
 }
 
 #post_2025_climate,
@@ -141,8 +131,7 @@ th {
 #financial_mechanism,
 #loss_damage,
 #adaptation_finance {
-    background-color: #919191;
-    color: white;
+    background-color: #ddd;
     font-weight: 600;
     left: 0;
     border-left: 0px;
@@ -152,40 +141,34 @@ th {
 
 .submission {
     background: #aa4893 !important;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
 .meeting {
     background: #4d6ab2 !important;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
 .deliberation {
     background: #459ea0 !important;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
 .deadline {
     background: #9b4558 !important;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
 .report {
     background: #439b56 !important;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
-
-/* td[colspan="2"],
-td[colspan="3"],
-td[colspan="4"] {
-    text-align: center;
-} */
 
 .separator td {
     background-color: #c8c8c8;
@@ -200,72 +183,66 @@ td[colspan="4"] {
     border-bottom-width: 0 !important;
 }
 
-/* .key_events td {
-    background-color: #fff;
-    color: rgb(55, 55, 55);
-    padding: 4px !important;
-    font-weight: 400;
-    font-size: 14px;
-} */
 
 .empty {
-    background-color: white !important;
+    background-color: #fff !important;
 }
 
 .empty_q {
-    background-color: white !important;
-    border-width: 0px;
+    /* /* background-color: rgb(219, 219, 219) !important; 
+    border: 7px solid rgb(219, 219, 219) !important; */
+    background-color: #fff !important;
 }
 
-.key_events {
-    background-color: white !important;
-}
+/* .key_events {
+    background-color: #fff !important;
+    border: 5px dotted #ccc !important;
+} */
 
 .key_border {
     /* border-width: 1px; */
-    background-color: rgb(219, 219, 219) !important;
-    border: 7px solid rgb(219, 219, 219) !important;
+    /* background-color: rgb(219, 219, 219) !important;
+    border: 7px solid rgb(219, 219, 219) !important; */
     /* border-bottom: 5px !important; */
-    color: black;
-    /* background-color: #a9a9a9 !important; */
+    color: #000;
+    border: 8px solid #ddd !important;
+    background-color: #fff !important;
 }
 
-.sticky td {}
-
 .td_border {
-    border: 7px solid rgb(219, 219, 219) !important;
-    border-top-width: 5px;
-    color: white;
+    /* border: 7px solid rgb(219, 219, 219) !important; */
+    /* border-top-width: 5px; */
+    border: 8px solid #ddd !important;
+    color: #fff;
 }
 
 .report_year {
-    border-top: 5px dashed #439b56 !important;
-    border-right: 5px dashed #439b56 !important;
-    border-bottom: 5px dashed #439b56 !important;
-    border-left: 5px dashed #439b56 !important;
-    background-color: white !important;
-    color: black;
+    border-top: 4px dashed #439b56 !important;
+    border-right: 4px dashed #439b56 !important;
+    border-bottom: 4px dashed #439b56 !important;
+    border-left: 4px dashed #439b56 !important;
+    background-color: #fff !important;
+    /* border: 2px solid gray !important; */
+    color: #000;
 }
 
 .meeting_year {
-    border-top: 5px dashed #4d6ab2 !important;
-    border-right: 5px dashed #4d6ab2 !important;
-    border-bottom: 5px dashed #4d6ab2 !important;
-    border-left: 5px dashed #4d6ab2 !important;
-    background-color: white !important;
-    color: black;
+    border-top: 4px dashed #4d6ab2 !important;
+    border-right: 4px dashed #4d6ab2 !important;
+    border-bottom: 4px dashed #4d6ab2 !important;
+    border-left: 4px dashed #4d6ab2 !important;
+    background-color: #fff !important;
+    color: #000;
 }
 
 .submission_year {
-    border-top: 5px dashed #aa4893 !important;
-    border-right: 5px dashed #aa4893 !important;
-    border-bottom: 5px dashed #aa4893 !important;
-    border-left: 5px dashed #aa4893 !important;
-    background-color: white !important;
-    color: black;
+    border-top: 4px dashed #aa4893 !important;
+    border-right: 4px dashed #aa4893 !important;
+    border-bottom: 4px dashed #aa4893 !important;
+    border-left: 4px dashed #aa4893 !important;
+    background-color: #fff !important;
+    color: #000;
 }
-
-
 
 
 
@@ -370,14 +347,27 @@ td[colspan="4"] {
     /* align-items: center; */
 }
 
-/* .quarter {
-    background-color: rgb(176, 176, 176) !important;
-    color: white;
-    font-weight: 700;
-} */
+@media (max-width: 900px) {
+    main {
+        width: 100%;
+    }
 
-/* .year {
-    background-color: rgb(119, 119, 119) !important;
-    color: white;
-    font-weight: 700;
-} */
+    .tableBody td {
+        font-size: .6rem !important;
+    }
+
+    .legend div {
+        font-size: .75rem;
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .q_header {
+        top: 29px;
+    }
+
+    .sticky {
+        top: 57px;
+    }
+
+}
