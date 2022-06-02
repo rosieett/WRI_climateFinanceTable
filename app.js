@@ -62,7 +62,7 @@ $(document).ready(function () {
     // data
     //
 
-    $('.new_goal_submissions').popover({
+    $('#new_goal_submissions_22q1').popover({
         placement: 'right',
         trigger: 'hover',
         html: true,
@@ -77,7 +77,37 @@ $(document).ready(function () {
         },
     });
 
+    $('#new_goal_submissions_22q3').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_submission">Submission</div>')
+            var text = $('<p class="popup_p">Parties, constituted bodies under the Convention and the Paris Agreement, the operating entities of the Financial Mechanism, climate finance institutions, observers and observer organizations, and other stakeholders, particularly from the private sector, are invited to submit their views on the objectives and elements of the NCQG</p>');
+            var info = $('<p class="subinfo">Date: 15 August 2022  <br>Mandate: 9/CMA.3 p.17</p>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
+        },
+    });
+
     $('.ted').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_meeting">Meeting</div>')
+            var text = $('<p class="popup_p">Per year four technical expert dialogues will be conducted as part of the ad hoc work programme on the NCQG. The technical expert dialogues will be organized by the co-chairs of the ad hoc work programme on the NCQG</p>');
+            var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.5</p>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
+        },
+    });
+
+    $('#ted_22q1').popover({
         placement: 'right',
         trigger: 'hover',
         html: true,
@@ -88,7 +118,23 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date: 22-23 March 2022 <br>Mandate: 9/CMA.3 p.5</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
+        },
+    });
+
+
+    $('#ted_22q3').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_meeting">Meeting</div>')
+            var text = $('<p class="popup_p">Per year four technical expert dialogues will be conducted as part of the ad hoc work programme on the NCQG. The technical expert dialogues will be organized by the co-chairs of the ad hoc work programme on the NCQG</p>');
+            var info = $('<p class="subinfo">Date: 13-14 June 2022 <br>Mandate: 9/CMA.3 p.5</p>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
         },
     });
 
@@ -103,7 +149,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.10</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -118,7 +164,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.18</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -133,7 +179,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.12</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -148,7 +194,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.9</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -160,10 +206,10 @@ $(document).ready(function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">The COP President is requested to prepare a summary of the deliberation at the previous HLMD, including recommendations, for consideration of the CMA</p>');
-            var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.9</p>');
+            var info = $('<p class="subinfo">Mandate: 9/CMA.3 p.11</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -178,7 +224,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date: End of 2024 <br>Mandate: 9/CMA.3 p.22</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -191,11 +237,11 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_report">Report</div>');
             var text = $('<p class="popup_p">The COP President is requested to summarize the deliberations of the HLMD for consideration by the CMA</p>');
             var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.11</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class= "phase_empty report"></span><span class="phase_empty report"></span><span class="phase_fill report"></span><span class="phase_empty report">');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class= "phase_empty report"></span><span class="phase_empty report"></span><span class="phase_fill report"></span><span class="phase_empty report">');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // // .append(phase);
         },
     });
 
@@ -208,11 +254,11 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a compilation and synthesis report on the information reported by developed country Parties in the biennial reports for consideration of the COP</p>');
             var info = $('<p class="subinfo">Mandate: 2/CP.17 p.21</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty"></span><span class="phase_fill report"></span>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty"></span><span class="phase_fill report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // // .append(phase)
         },
     });
 
@@ -223,13 +269,30 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_report">Report</div>')
-            var text = $('<p class="popup_p">The COP President is requested to summarize the deliberations of the HLMD for consideration by the CMA</p>');
-            var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.11</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span>');
+            var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a compilation and synthesis of the 9.5 biennial communications’</p>');
+            var info = $('<p class="subinfo">Mandate: 14/CMA.3 p.16</p>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // // .append(phase)
+        },
+    });
+
+    $('#95_compilation_synthesis_report_25').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_report">Report</div>')
+            var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a compilation and synthesis of the 9.5 biennial communications’</p>');
+            var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.7’</p>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
+            // // .append(phase)
         },
     });
 
@@ -244,7 +307,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date: By June 2024 <br>Mandate: 5/CMA.3 p.8</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -256,12 +319,12 @@ $(document).ready(function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">The UNFCCC secretariat is requested to produce synthesis reports on Parties’ BTRs</p>');
-            var info = $('<p class="subinfo">Date: By June 2024 <br>Mandate: 18/CMA.1 p.6a</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span>');
+            var info = $('<p class="subinfo">Mandate: 18/CMA.1 p.6a</p>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // // .append(phase)
         },
     });
 
@@ -274,11 +337,11 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_meeting">Meeting</div>')
             var text = $('<p class="popup_p">Biennial in-session workshop on information provided by Parties in their 9.5 biennial communications </p>');
             var info = $('<p class="subinfo">Mandate: 14/CMA.3 p.9 & 12/CMA.1 p.8</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty meeting"></span><span class="phase_empty meeting"></span><span class="phase_empty meeting"></span>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty meeting"></span><span class="phase_empty meeting"></span><span class="phase_empty meeting"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // // .append(phase)
         },
     });
 
@@ -293,7 +356,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date: December 2024 <br>Mandate: 5/CMA.3 p.22-23</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -306,11 +369,11 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">The due date for the submission of the fifth BR by Parties included in Annex I to the Convention is moved from 1 January 2022 to as early as the annual greenhouse gas inventory submission for inventory year 2020 is provided to the UNFCCC, but no later than 31 December 2022, in order to provide Parties with the opportunity to include the inventory data in these reports</p>');
             var info = $('<p class="subinfo">Date: No later than 31 December 2022 <br>Mandate: 2/CP.17 p.13 & 1/CP.24 p.38</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -321,11 +384,11 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_deadline">Deadline</div>')
-            var text = $('<p class="popup_p">The due date for the submission of the fifth BR by Parties included in Annex I to the Convention is moved from 1 January 2022 to as early as the annual greenhouse gas inventory submission for inventory year 2020 is provided to the UNFCCC, but no later than 31 December 2022, in order to provide Parties with the opportunity to include the inventory data in these reports</p>');
+            var text = $('<p class="popup_p">The UNFCCC secretariat is requested to develop reporting tools for the electronic reporting of the CTFs and make available a test version of the reporting tools by June 2023 with a view to the final version of the tools being completed by June 2024, subject to the timely availability of sufficient financial resources</p>');
             var info = $('<p class="subinfo">Date: By June 2023<br>Mandate: 5/CMA.3 p.8</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -337,14 +400,32 @@ $(document).ready(function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a summary report on the in-session workshop on the 9.5 biennial communications for consideration by the CMA</p>');
-            var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.8</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span><span class="phase_empty report"></span>');
+            var info = $('<p class="subinfo">Mandate: 14/CMA.3 p.11</p>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span><span class="phase_empty report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
+
+    $('#95_insession_workshop_report_25q4').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_report">Report</div>')
+            var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a summary report on the in-session workshop on the 9.5 biennial communications for consideration by the CMA</p>');
+            var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.8</p>');
+            // // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty report"></span><span class="phase_empty report"></span>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
+            // .append(phase);
+        },
+    });
+
 
     $('.3rd_95_biennial_communications').popover({
         placement: 'right',
@@ -353,13 +434,13 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_deadline">Deadline</div>')
-            var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a summary report on the in-session workshop on the 9.5 biennial communications for consideration by the CMA</p>');
+            var text = $('<p class="popup_p">Developed country Parties are urged to submit Biennial Communications on ex-ante climate finance information</p>');
             var info = $('<p class="subinfo">Date: No later than 31 December 2024 <br>Mandate: 12/CMA.1 p.2</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty deadline"></span>')
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty deadline"></span>')
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -370,13 +451,13 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_deadline">Deadline</div>');
-            var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a summary report on the in-session workshop on the 9.5 biennial communications for consideration by the CMA</p>');
+            var text = $('<p class="popup_p">Wrong description added. Should be: ‘Developed country Parties are urged to submit biennial communications on ex-ante climate finance information</p>');
             var info = $('<p class="subinfo">Date: No later than 31 December 2022 <br>Mandate: 14/CMA.3 p.5</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty deadline"></span>');
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty deadline"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -389,13 +470,50 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_meeting">Meeting</div>')
             var text = $('<p class="popup_p">The UNFCCC secretariat is requested to prepare a summary report on the in-session workshop on the 9.5 biennial communications for consideration by the CMA</p>');
             var info = $('<p class="subinfo">Date: No later than 31 December 2022 <br>Mandate: 12/CMA.1 p.10</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class="phase_empty meeting"></span><span class="phase_fill meeting"></span><span class="phase_empty meeting"></span>')
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class="phase_empty meeting"></span><span class="phase_fill meeting"></span><span class="phase_empty meeting"></span>')
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
+
+
+
+    $('#95_hlmd_23q4').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_meeting">Meeting</div>')
+            var text = $('<p class="popup_p">High-level ministerial dialogues on climate finance to be informed, inter alia, by the summary reports on the 9.5 in-session workshops and the 9.5 biennial communications</p>');
+            var info = $('<p class="subinfo">Date: No later than 31 December 2022 <br>Mandate: 12/CMA.1 p.10</p>');
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class="phase_empty meeting"></span><span class="phase_fill meeting"></span><span class="phase_empty meeting"></span>')
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
+            // .append(phase);
+        },
+    });
+
+    $('#95_hlmd_25').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_meeting">Meeting</div>')
+            var text = $('<p class="popup_p">High-level ministerial dialogues on climate finance to be informed, inter alia, by the summary reports on the 9.5 in-session workshops and the 9.5 biennial communications</p>');
+            var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.10</p>');
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class= "phase_empty meeting"></span><span class="phase_empty meeting"></span><span class="phase_fill meeting"></span><span class="phase_empty meeting"></span>')
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
+            // .append(phase);
+        },
+    });
+
 
     $('.final_bur').popover({
         placement: 'right',
@@ -406,11 +524,10 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">Due date for the final biennial update reports</p>');
             var info = $('<p class="subinfo">Date: No later than 31 December 2024<br>Mandate: 2/CP.17 p.13 & 6/CP25 p.3</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>')
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>')
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .appen(phase);
         },
     });
 
@@ -421,13 +538,13 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_deliberation">Deliberation</div>')
-            var text = $('<p class="popup_p">Due date for the final biennial update reports</p>');
-            var info = $('<p class="subinfo">Date: No later than 31 December 2024 <br>Mandate: 2/CP.17 p.13 & 6/CP25 p.3</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty deliberation"></span><span class= "phase_empty deliberation"></span><span class= "phase_empty deliberation"></span><span class="phase_empty deliberation"></span><span class="phase_empty deliberation"></span><span class="phase_empty deliberation"><span class="phase_empty deliberation">');
+            var text = $('<p class="popup_p">Consideration to update the types of information to be provided by Parties in their 9.5 biennial communications on the basis of Parties’ experience and lessons learned in the preparation of their biennial communications of indicative quantitative and qualitative information</p>');
+            var info = $('<p class="subinfo">Mandate: 12/CMA.1 p.13</p>');
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty deliberation"></span><span class= "phase_empty deliberation"></span><span class= "phase_empty deliberation"></span><span class="phase_empty deliberation"></span><span class="phase_empty deliberation"></span><span class="phase_empty deliberation"><span class="phase_empty deliberation">');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -442,7 +559,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date: No later than 31 December 2024 <br>Mandate: 2/CP.17 p.13 & 6/CP25 p.3</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -457,7 +574,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date: By December 2023 <br>Mandate: 5/CMA.3 p.10</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -472,7 +589,22 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CP.26 p.21</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
+        },
+    });
+
+    $('#ltf_hlmd_24q4').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_meeting">Meeting</div>')
+            var text = $('<p class="popup_p">The COP Presidency is invited to organize a HLMD on climate finance</p>');
+            var info = $('<p class="subinfo">Mandate: 4/CP.26 p.20</p>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
         },
     });
 
@@ -487,9 +619,11 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CP.26 p.20</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
+
+
 
     $('.first_btrs').popover({
         placement: 'right',
@@ -499,12 +633,12 @@ $(document).ready(function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">Submission of first BTRs in accordance with the MPGs</p>');
-            var info = $('<p class="subinfo">Mandate: 4/CP.26 p.20</p>')
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty"></span>');
+            var info = $('<p class="subinfo">Date: At the latest by 31 December 2024<br>Mandate: 18/CMA.1 p.3</p>')
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span><span class="phase_empty"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -520,7 +654,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CP.26 p.12 & 10/CMA.3 p.3</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -535,7 +669,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 5/CP.26 p.23</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -550,7 +684,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">11/CP.25 p.17</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -563,11 +697,11 @@ $(document).ready(function () {
             var milestone = $('<div class="popup_report">Report</div>')
             var text = $('<p class="popup_p">The SCF is requested to prepare, every four years, a report on the determination of the needs of developing country Parties related to implementing the Convention and the Paris Agreement, for consideration by the COP and CMA. This report is formally known as the report on the determination of the needs of developing country Parties related to implementing the Convention and the Paris Agreement</p>');
             var info = $('<p class="subinfo">Mandate: 4/CP.24 p.13</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>');
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -579,10 +713,10 @@ $(document).ready(function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_submission">Submission</div>')
             var text = $('<p class="popup_p">Parties, the operating entities of the Financial Mechanism, international financial institutions and other stakeholders in the financial sector are invited to submit their views regarding ways to achieve Article 2.1c, including options for approaches and guidelines for implementation</p>');
-            var info = $('<p class="subinfo">Date: by 30 April 2022 <br>Mandate: 10/CMA.3 p.2</p>');
+            var info = $('<p class="subinfo">Date: By 30 April 2022 <br>Mandate: 10/CMA.3 p.2</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -593,13 +727,13 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_report">Report</div>')
-            var text = $('<p class="popup_p">The SCF is requested to prepare a a biennial assessment and overview of climate finance flows, to take into account relevant work by other bodies and entities on the measurement, reporting and verification of support and the tracking of climate finance. This report is formally known as the Biennial Assessment and Overview of Climate Finance Flows</p>');
+            var text = $('<p class="popup_p">The SCF is requested to prepare a biennial assessment and overview of climate finance flows, to take into account relevant work by other bodies and entities on the measurement, reporting and verification of support and the tracking of climate finance. This report is formally known as the Biennial Assessment and Overview of Climate Finance Flows</p>');
             var info = $('<p class="subinfo">Mandate: 1/CP.18 p.71</p>');
-            var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>');
+            // var phase = $('<div class="phase_area"><p class="phase_p">Phase: </p><div class="phase_area_group"><span class="phase_empty report"></span>');
             return mysvgdiv.append(milestone)
                 .append(text)
                 .append(info)
-                .append(phase);
+            // .append(phase);
         },
     });
 
@@ -614,7 +748,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CP.26 p.13</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -629,7 +763,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 10/CMA.3 p.2</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -644,7 +778,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CP.26 p.19</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -659,7 +793,22 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 11/CP.25 p.17</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
+        },
+    });
+
+    $('.conclusion_2nd_review').popover({
+        placement: 'right',
+        trigger: 'hover',
+        html: true,
+        content: function () {
+            var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+            var milestone = $('<div class="popup_deliberation">Deliberation</div>')
+            var text = $('<p class="popup_p">The second review of the SCF should be concluded at COP28</p>');
+            var info = $('<p class="subinfo">Mandate: 11/CP.25 p.17</p>');
+            return mysvgdiv.append(milestone)
+                .append(text)
+                .append(info)
         },
     });
 
@@ -669,12 +818,12 @@ $(document).ready(function () {
         html: true,
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
-            var milestone = $('<div class="popup_deadline">Deadline</div>')
+            var milestone = $('<div class="popup_submission">Submission</div>')
             var text = $('<p class="popup_p">Parties are invited to submit views and recommendations on guidance for the GEF</p>');
             var info = $('<p class="subinfo">Date: 10 weeks before COP27<br>Mandate: 7/CP.26 p.19</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -689,7 +838,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 6/CP.24 p.2</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -704,7 +853,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 11/CP.23 p.4</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -715,11 +864,11 @@ $(document).ready(function () {
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
             var milestone = $('<div class="popup_meeting">Meeting</div>')
-            var text = $('<p class="popup_p">The eighth replenishment of the GEF will take place after the seventh replenishment period is finalized in June 2022</p>');
+            var text = $('<p class="popup_p">The pledging conference for the second replenishment is currently expected to take place in mid-2023</p>');
             var info = $('<p class="subinfo">Date: Expeded in mid-2023<br>Mandate: 6/CP.26 p.3c</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -734,7 +883,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Date:Expected to begin mid-2022<br>Mandate: 6/CP.26 p.3c</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -749,7 +898,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 11/CP.23 p.4</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -764,7 +913,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 1/CMA.3 p.73</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -774,12 +923,12 @@ $(document).ready(function () {
         html: true,
         content: function () {
             var mysvgdiv = $('<div class="popup" padding:5px"></div>');
-            var milestone = $('<div class="popup_meeting">Meeting</div>')
-            var text = $('<p class="popup_p">Parties to the Kyoto Protocol, Parties to the Paris Agreement and observer organizations, as well as other interested international organizations, stakeholders and nongovernmental organizations involved in the activities of the Adaptation Fund, and implementing entities accredited by the Adaptation Fund Board are invited to o submit their views on the fourth review of the Adaptation Fund for for consideration by the Subsidiary Body for Implementation at its fifty-sixth session (June 2022)</p>');
-            var info = $('<p class="subinfo">Date: 31-Mar-22<br>Mandate: 4/CMP.16 p.3</p>');
+            var milestone = $('<div class="popup_submission">Submission</div>')
+            var text = $('<p class="popup_p">Parties to the Kyoto Protocol, Parties to the Paris Agreement and observer organizations, as well as other interested international organizations, stakeholders and nongovernmental organizations involved in the activities of the Adaptation Fund, and implementing entities accredited by the Adaptation Fund Board are invited to o submit their views on the fourth review of the Adaptation Fund for for consideration by the Subsidiary Body for Implementation at its fifty-sixth session</p>');
+            var info = $('<p class="subinfo">Date: 31 March 2021<br>Mandate: 4/CMP.16 p.3</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -794,7 +943,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CMP.16 p.5</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -809,7 +958,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 1/CMA.3 p.18</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
@@ -824,7 +973,7 @@ $(document).ready(function () {
             var info = $('<p class="subinfo">Mandate: 4/CMP.16 p.6</p>');
             return mysvgdiv.append(milestone)
                 .append(text)
-                .append(info);
+                .append(info)
         },
     });
 
