@@ -39,20 +39,21 @@
                 <div class="deliberation">Deliberation</div>
                 <div class="report">Report</div>
                 <div class="report_legend">No Specified Date</div>
-                <div class="event_legend">Link to a key event</div>
+                <div class="key_border">Event</div>
+                <div class="event_link_legend">Happens at the corresponding event</div>
             </div>
         </div>
 
         <div class="table_area">
-            <table class="table" id="table">
+            <table class="table table-bordered" id="table">
                 <thead>
 
                     <tr class="header">
                         <th colspan="1"></th>
-                        <th colspan="4">2022</th>
-                        <th colspan="4">2023</th>
-                        <th colspan="4">2024</th>
-                        <th colspan="4">2025</th>
+                        <th colspan="5">2022</th>
+                        <th colspan="5">2023</th>
+                        <th colspan="5">2024</th>
+                        <th colspan="5">2025</th>
                     </tr>
 
                     <!-- ROW Q -->
@@ -61,15 +62,16 @@
                         <th>Q1</th>
                         <th>Q2</th>
                         <th>Q3</th>
-                        <th>Q4</th>
+                        <th colspan="2">Q4</th>
+                        <!-- <th>Q4</th> -->
                         <th>Q1</th>
                         <th>Q2</th>
                         <th>Q3</th>
-                        <th>Q4</th>
+                        <th colspan="2">Q4</th>
                         <th>Q1</th>
                         <th>Q2</th>
                         <th>Q3</th>
-                        <th>Q4</th>
+                        <th colspan="2">Q4</th>
                         <th>Q1</th>
                         <th>Q2</th>
                         <th>Q3</th>
@@ -79,41 +81,47 @@
                 <tbody class="tableBody table-fixed">
 
 
+                    <!-- // OLD WORKING -->
                     <tr class="sticky">
-                        <td class="empty_q">Key Events: </td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs56</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
                         <td colspan="1" class="key_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
 
                     <tr class="post_2025_climate">
-                        <td rowspan="6" class="post2025climate_data" id="post_2025_climate">Post-2025 Climate Finance Goal</td>
+                        <td rowspan="5" class="post2025climate_data" id="post_2025_climate">Post-2025 Climate Finance Goal</td>
                         <td class="meeting" id="ted_22q1">TED</td>
                         <td class="meeting ted td_border">TED</td>
                         <td class="meeting" id="ted_22q3">TED</td>
                         <td class="meeting ted td_border">TED</td>
+                        <td class="meeting hlmd">HLMD</td>
+
                         <td class="meeting ted">TED</td>
                         <td class="meeting ted td_border">TED</td>
                         <td class="meeting ted">TED</td>
                         <td class="meeting ted td_border">TED</td>
+                        <td class="meeting hlmd">HLMD</td>
+
                         <td class="meeting ted">TED</td>
                         <td class="meeting ted td_border">TED</td>
                         <td class="meeting ted">TED</td>
                         <td class="meeting ted td_border">TED</td>
+                        <td class="meeting hlmd">HLMD</td>
                         <td colspan="4"></td>
 
                     </tr>
@@ -124,90 +132,86 @@
                         <td></td>
                         <td class="submission" id="new_goal_submissions_22q3">New Goal Submissions</td>
                         <td class="report ted_annual_report td_border">TED Annual Report</td>
-                        <td colspan="3"></td>
-                        <td class="report ted_annual_report td_border">TED Annual Report</td>
-                        <td colspan="3"></td>
-                        <td class="report ted_annual_report td_border">TED Annual Report</td>
-                        <td colspan="4"></td>
-                    </tr>
-
-
-                    <tr class="post_2025_climate">
-                        <td colspan="3"></td>
-                        <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
-                        <td colspan="3"></td>
-                        <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
-                        <td colspan="3"></td>
-                        <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
-                    </tr>
-
-
-                    <tr class="post_2025_climate">
-                        <td colspan="3"></td>
-                        <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
-                        <td colspan="3"></td>
-                        <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
-                        <td colspan="3"></td>
-                        <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
-
-                    </tr>
-
-                    <tr class="post_2025_climate">
-                        <td colspan="3"></td>
-                        <td class="meeting hlmd">HLMD</td>
-                        <td colspan="3"></td>
-                        <td class="meeting hlmd">HLMD</td>
-                        <td colspan="3"></td>
-                        <td class="meeting hlmd">HLMD</td>
-                        <td colspan="4"></td>
-                    </tr>
-
-                    <tr class="post_2025_climate">
-                        <td colspan="3"></td>
                         <td class="report technical_paper">Technical Paper</td>
-                        <td colspan="7"></td>
+
+                        <td colspan="3"></td>
+                        <td class="report ted_annual_report td_border">TED Annual Report</td>
+                        <td colspan="4"></td>
+                        <td class="report ted_annual_report td_border">TED Annual Report</td>
                         <td class="deadline setting_new_goal">Setting the New Goal</td>
+
                         <td colspan="4"></td>
                     </tr>
+
+
+                    <tr class="post_2025_climate">
+                        <td colspan="3"></td>
+                        <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
+                        <td colspan="4"></td>
+                        <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
+                        <td colspan="4"></td>
+                        <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
+                    </tr>
+
+
+                    <tr class="post_2025_climate">
+                        <td colspan="3"></td>
+                        <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
+                        <td colspan="4"></td>
+                        <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
+                        <td colspan="4"></td>
+                        <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
+
+                    </tr>
+
+                    <tr class="post_2025_climate">
+                        <td colspan="9"></td>
+                        <td colspan="3"></td>
+                        <td colspan="4"></td>
+                    </tr>
+
+
 
                     <tr class="separator">
-                        <td colspan="17"> </td>
+                        <td colspan="20"> </td>
                     </tr>
 
                     <tr class="sticky">
-                        <td class="empty">Key Events:</td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
-                        <td colspan="1" class="no_border">SBs56</td>
-                        <td class=" empty_q"></td>
+                        <td colspan="1" class="key_border">SBs56</td>
+                        <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
-                        <td colspan="1" class="no_border">SBs58</td>
+                        <td colspan="2" class="empty_q"></td>
+                        <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
-                        <td colspan="1" class="no_border">SBs60</td>
+                        <td colspan="2" class="empty_q"></td>
+                        <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
-                        <td colspan="1" class="no_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
+                        <td colspan="1" class="key_border">SBs62</td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
 
                     <tr class="climate_finance_reporting">
-                        <td rowspan="7" class="climate_finance_reporting_data" id="climate_finance_reporting">Climate Finance Reporting</td>
+                        <td rowspan="5" class="climate_finance_reporting_data" id="climate_finance_reporting">Climate Finance Reporting</td>
                         <td colspan="3"></td>
                         <td class="report 95_summary_HLMD td_border">9.5 HLMD Summary Report</td>
-                        <td></td>
+                        <td colspan="2"></td>
                         <td class="deadline test_electronic_reporting_tools">Test Electronic Reporting Tools</td>
                         <td></td>
                         <td class="report 95_insession_workshop_summary_report td_border">9.5 In-Session Workshop Summary Report</td>
-                        <td></td>
+                        <td class="meeting" id="95_hlmd_23q4">9.5 HLMD</td>
+
+                        <td colspan="1"></td>
                         <td class="deadline final_electronic_reporting_tools">Final Electronic Reporting Tools</td>
                         <td></td>
                         <td class="report 95_summary_HLMD td_border">9.5 HLMD Summary Report</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="report td_border" id="95_insession_workshop_report_25q4"> 9.5 In-Session Workshop Report</td>
                     </tr>
 
@@ -215,10 +219,13 @@
                     <tr class="climate_finance_reporting">
                         <td colspan="3"></td>
                         <td class="deadline 2nd_95_biennial_communications">2nd 9.5 biennial communications</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="deliberation update_of_95_guidelines td_border">Update of 9.5 guidelines</td>
+                        <td class="report compilation_synthesis_5th_BRs">Compilation and Synthesis 5th BRs</td>
+
                         <td colspan="3"></td>
                         <td class="deadline 3rd_95_biennial_communications">3rd 9.5 Biennial Communications</td>
+                        <td></td>
                         <td colspan="4" class="report_year synthesis_report_btrs">Synthesis Report BTRs</td>
                     </tr>
 
@@ -227,62 +234,56 @@
                     <tr class="climate_finance_reporting">
                         <td colspan="3"></td>
                         <td class="report 5th_br">5th BR</td>
-                        <td colspan="4" class="report_year 95_compilation_synthesis_report">9.5 Compilation and Synthesis Report</td>
+                        <td colspan="5"></td>
+                        <td class="submission submissions_electronic_reporting_tools">Submissions on Electronic Reporting Tools</td>
                         <td colspan="3"></td>
                         <td class="deadline btr_web_portal">BTR Web Portal</td>
+                        <td></td>
                         <td colspan="4" class="report_year" id="95_compilation_synthesis_report_25">9.5 Compilation and Synthesis Report</td>
                     </tr>
 
+
+
                     <tr class="climate_finance_reporting">
-                        <td colspan="4"></td>
-                        <td colspan="4" class="meeting_year 95_insession_workshop">9.5 In-Session Workshop</td>
+                        <td colspan="5"></td>
+                        <td colspan="5" class="report_year 95_compilation_synthesis_report">9.5 Compilation and Synthesis Report</td>
                         <td colspan="3"></td>
                         <td class="report final_bur">Final BUR</td>
+                        <td></td>
                         <td colspan="4" class="meeting_year 95_insession_workshop">9.5 In-Session Workshop</td>
                     </tr>
 
 
                     <tr class="climate_finance_reporting">
-                        <td colspan="7"></td>
-                        <td class="meeting" id="95_hlmd_23q4">9.5 HLMD</td>
+                        <td colspan="5"></td>
+                        <td colspan="5" class="meeting_year 95_insession_workshop">9.5 In-Session Workshop</td>
                         <td colspan="3"></td>
                         <td class="report first_btrs">First BTR</td>
+                        <td></td>
                         <td colspan="4" class="meeting_year" id="95_hlmd_25"> 9.5 HLMD</td>
                     </tr>
 
 
-                    <tr class="climate_finance_reporting">
-                        <td colspan="7"></td>
-                        <td class="report compilation_synthesis_5th_BRs">Compilation and Synthesis 5th BRs</td>
-                    </tr>
-
-
-                    <tr class="climate_finance_reporting">
-                        <td colspan="7"></td>
-                        <td class="submission submissions_electronic_reporting_tools">Submissions on Electronic Reporting Tools</td>
-                    </tr>
-
                     <tr class="separator">
-                        <td colspan="17"> </td>
+                        <td colspan="20"> </td>
                     </tr>
-
                     <tr class="sticky">
-                        <td class="empty">Key Events:</td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs56</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
                         <td colspan="1" class="key_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
@@ -293,9 +294,9 @@
                         <td class="submission submission_art_21c">Submissions on Art. 2.1c</td>
                         <td></td>
                         <td class="deliberation initiation_2nd_review td_border">Initiation 2nd review of the SCF</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="deliberation conclusion_2nd_review td_border">Conclusion 2nd Review of the SCF</td>
-                        <td colspan="3"></td>
+                        <td colspan="2"></td>
                         <td class="report ndr td_border">NDR</td>
                         <td colspan="4"></td>
                     </tr>
@@ -345,26 +346,25 @@
 
 
                     <tr class="separator">
-                        <td colspan="17"> </td>
+                        <td colspan="20"> </td>
                     </tr>
-
                     <tr class="sticky">
-                        <td class="empty">Key Events:</td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs56</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
                         <td colspan="1" class="key_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
@@ -373,35 +373,35 @@
                         <td colspan="1" class="long_term_finance_data" id="long_term_finance">Long-Term Climate Finance </td>
                         <td colspan="3"></td>
                         <td class="meeting ltf_hlmd td_border">LTF HLMD</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="report hlmd_summary_report_ltf td_border">HLMD Summary Report LTF</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="meeting td_border" id="ltf_hlmd_24q4">LTF HLMD</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="report hlmd_summary_report_ltf td_border">HLMD Summary Report LTF</td>
                     </tr>
 
                     <tr class="separator">
-                        <td colspan="17"> </td>
+                        <td colspan="20"> </td>
                     </tr>
 
                     <tr class="sticky">
-                        <td class="empty">Key Events:</td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs56</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
                         <td colspan="1" class="key_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
@@ -412,7 +412,7 @@
                         <td class="deadline 8th_replenishment_GEF">8th Replenishment of the GEF</td>
                         <td></td>
                         <td class="deliberation 7th_replenishment_finance td_border">7th Review of the Financial Mechanism</td>
-                        <td></td>
+                        <td colspan="2"></td>
                         <td class="meeting pledging_conference_2nd_replen">GCF Pledging Conference 2nd Replenishment</td>
                     </tr>
 
@@ -424,26 +424,26 @@
                     </tr>
 
                     <tr class="separator">
-                        <td colspan="17"> </td>
+                        <td colspan="20"> </td>
                     </tr>
 
                     <tr class="sticky">
-                        <td class="empty">Key Events:</td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs56</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
                         <td colspan="1" class="key_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
@@ -453,7 +453,7 @@
                         <td class="submission submission_4th_review_af td_border">Submissions for the 4th Review of the AF</td>
                         <td></td>
                         <td class="report af_review_technical_paper td_border">Technical Paper for the 4th review of the AF</td>
-                        <td colspan="11"></td>
+                        <td colspan="12"></td>
                         <td class="deadline doubling_adaptation_finance td_border">Doubling of Adaptation Finance </td>
                     </tr>
 
@@ -464,26 +464,26 @@
                     </tr>
 
                     <tr class="separator">
-                        <td colspan="17"> </td>
+                        <td colspan="20"> </td>
                     </tr>
 
                     <tr class="sticky">
-                        <td class="empty">Key Events:</td>
+                        <td class="key_border">Events: </td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs56</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP27/CMA4</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs58</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP28/CMA5</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class="empty_q"></td>
                         <td colspan="1" class="key_border">SBs60</td>
                         <td class="empty_q"></td>
                         <td colspan="1" class="key_border">COP29/CMA6</td>
-                        <td class="empty_q"></td>
+                        <td colspan="2" class=" empty_q"></td>
                         <td colspan="1" class="key_border">SBs62</td>
-                        <td class="empty_q"></td>
+                        <td colspan="1" class="empty_q"></td>
                         <td colspan="1" class="key_border">COP30/CMA7</td>
                     </tr>
 
@@ -492,9 +492,9 @@
                         <td rowspan="1" class="loss_damage_data" id="loss_damage">Loss & Damage Finance</td>
                         <td colspan="3"></td>
                         <td class="meeting glasgow_dialogue_ld_finance td_border">Glasgow Dialogue on L&D finance</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="meeting glasgow_dialogue_ld_finance td_border">Glasgow Dialogue on L&D finance</td>
-                        <td colspan="3"></td>
+                        <td colspan="4"></td>
                         <td class="meeting glasgow_dialogue_ld_finance td_border">Glasgow Dialogue on L&D finance</td>
                     </tr>
 
@@ -527,6 +527,100 @@
 <script src="app.js">
 </script>
 
+<!-- NEW NOT WORKING -->
+<!-- <tr class="sticky">
+<td class="empty_q">Events: </td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">SBs56</td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">COP27/CMA4</td>
+<td class="empty_q"></td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">SBs58</td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">COP28/CMA5</td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">SBs60</td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">COP29/CMA6</td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">SBs62</td>
+<td class="empty_q"></td>
+<td colspan="1" class="key_border">COP30/CMA7</td>
+</tr>
+
+
+<tr class="post_2025_climate">
+    <td rowspan="6" class="post2025climate_data" id="post_2025_climate">Post-2025 Climate Finance Goal</td>
+    <td class="meeting" id="ted_22q1">TED</td>
+    <td class="meeting ted td_border">TED</td>
+    <td class="meeting" id="ted_22q3">TED</td>
+    <td class="meeting ted td_border">TED</td>
+    <td class="meeting hlmd">HLMD</td>
+    <td class="meeting ted">TED</td>
+    <td class="meeting ted td_border">TED</td>
+    <td class="meeting ted">TED</td>
+    <td class="meeting ted td_border">TED</td>
+    <td class="meeting ted">TED</td>
+    <td class="meeting ted td_border">TED</td>
+    <td class="meeting ted">TED</td>
+    <td class="meeting ted td_border">TED</td>
+    <td colspan="4"></td>
+
+</tr>
+
+
+<tr class="post_2025_climate">
+    <td class="submission" id="new_goal_submissions_22q1">New Goal Submissions</td>
+    <td></td>
+    <td class="submission" id="new_goal_submissions_22q3">New Goal Submissions</td>
+    <td class="report ted_annual_report td_border">TED Annual Report</td>
+    <td class="report technical_paper">Technical Paper</td>
+    <td colspan="3"></td>
+    <td class="report ted_annual_report td_border">TED Annual Report</td>
+    <td colspan="3"></td>
+    <td class="report ted_annual_report td_border">TED Annual Report</td>
+    <td colspan="4"></td>
+</tr>
+
+
+<tr class="post_2025_climate">
+    <td colspan="3"></td>
+    <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
+    <td colspan="4"></td>
+    <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
+    <td colspan="3"></td>
+    <td class="report summary_report_HLMD td_border">HLMD Summary Report</td>
+</tr>
+
+
+<tr class="post_2025_climate">
+    <td colspan="3"></td>
+    <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
+    <td colspan="4"></td>
+    <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
+    <td colspan="3"></td>
+    <td class="deliberation ncqg_deliberation td_border">NCQG Deliberation</td>
+
+</tr>
+
+<tr class="post_2025_climate">
+    <td colspan="3"></td>
+
+    <td colspan="3"></td>
+    <td class="meeting hlmd">HLMD</td>
+    <td colspan="3"></td>
+    <td class="meeting hlmd">HLMD</td>
+    <td colspan="4"></td>
+</tr>
+
+<tr class="post_2025_climate">
+    <td colspan="3"></td>
+
+    <td colspan="7"></td>
+    <td class="deadline setting_new_goal">Setting the New Goal</td>
+    <td colspan="4"></td>
+</tr>-->
 
 
 </html>
