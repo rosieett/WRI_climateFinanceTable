@@ -61,12 +61,12 @@ main {
 }
 
 .report_legend {
-    border: 2px dashed #aaa !important;
+    border: 3px dashed #aaa !important;
 }
 
 .event_link_legend {
     border: 5px solid rgb(51, 51, 51) !important;
-    background-color: #ddd;
+    background-color: #eee;
     padding: .2rem .2rem !important;
 }
 
