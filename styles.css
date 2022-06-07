@@ -96,6 +96,9 @@ main {
     border-right: 0px;
     border-left: 0px;
     border-bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: sticky;
 }
 
 
@@ -123,11 +126,28 @@ main {
     border-left: 0px;
     border-color: #fff;
     border-bottom-width: 0px !important;
+    position: sticky;
+    top: 30px;
+    left: 0;
 }
 
 .q_header_line {
     border-left-width: 5px !important;
 }
+
+.event_sticky {
+    position: sticky;
+    top: 63px;
+    left: 0px;
+}
+
+
+#sticky_start {
+    left: 0;
+    z-index: 20000;
+    top:
+}
+
 
 .rightBorder {
     border-right: 1px solid rgb(60, 60, 60);
@@ -143,7 +163,7 @@ main {
     text-align: center;
     border-color: #fff;
     border: 2px solid #fff;
-    /* width: 100px !important; */
+
 }
 
 .table>:not(:first-child) {
@@ -163,14 +183,15 @@ td:empty {
 #adaptation_finance {
     background-color: #ddd;
     font-weight: 600;
-    left: 0;
     border-left: 0px;
     padding: 13px;
     margin-bottom: 13px;
     font-size: .75rem !important;
     position: sticky;
     left: 0;
+    z-index: 1;
 }
+
 
 .submission {
     background: #aa4893 !important;
@@ -210,24 +231,10 @@ td:empty {
     border-top: 3px solid white;
 }
 
-
-
-.sticky {
-    position: sticky;
-    top: 63px;
-}
-
-
 .empty_q {
     background-color: #fff !important;
 }
 
-
-/* .key_border {
-    color: #000;
-    border: 8px solid #ddd !important;
-    background-color: #fff !important;
-} */
 
 
 .key_border {
@@ -235,6 +242,7 @@ td:empty {
     border: 5px solid rgb(51, 51, 51) !important;
     background-color: rgb(135, 135, 135) !important;
     padding: .2rem .2rem !important;
+    position: sticky
 }
 
 .no_border {
@@ -341,6 +349,17 @@ td:empty {
     margin-right: 5px;
 }
 
+.popup_event {
+    background-color: rgb(135, 135, 135) !important;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px;
+    border: 3px solid rgb(51, 51, 51) !important;
+}
+
 .popup_p {
     margin-top: 5px;
     display: block;
@@ -402,11 +421,11 @@ td:empty {
 
     .q_header {
         font-size: .7rem;
-        top: 28px;
+        top: 26px;
     }
 
     .sticky {
-        top: 54px;
+        top: 55px;
     }
 
     .table>:not(caption)>*>* {
