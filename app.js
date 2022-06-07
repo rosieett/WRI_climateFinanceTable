@@ -294,22 +294,6 @@ $(document).ready(function () {
             },
         });
 
-        $('#ncqg_deliberation_22q4').popover({
-            placement: 'right',
-            trigger: 'hover',
-            html: true,
-            content: function () {
-                var mysvgdiv = $('<div class="popup" padding:5px"></div>');
-                var milestone = $('<div class="popup_deliberation">Deliberation</div>')
-                var event = $('<div class="popup_event">COP27/CMA4</div>')
-                var text = $('<p class="popup_p">The deliberations of the NCQG continue at CMA4, CMA5 and CMA6. The deliberations take stock of the progress made and provide further guidance on the ad hoc work programme. The deliberations take into consideration the annual reports of the co-chairs of the ad hoc work programme, including the key findings contained therein, and the summary reports on the HLMD, including the guidance contained therein</p>');
-                var info = $('<p class="subinfo">Mandate: 9/CMA.3 paragraph 12</p>');
-                return mysvgdiv.append(milestone)
-                    .append(event)
-                    .append(text)
-                    .append(info)
-            },
-        });
 
         $('#ncqg_deliberation_22q4').popover({
             placement: 'right',
@@ -355,6 +339,23 @@ $(document).ready(function () {
                 var event = $('<div class="popup_event">COP29/CMA6</div>')
                 var text = $('<p class="popup_p">The deliberations of the NCQG continue at CMA4, CMA5 and CMA6. The deliberations take stock of the progress made and provide further guidance on the ad hoc work programme. The deliberations take into consideration the annual reports of the co-chairs of the ad hoc work programme, including the key findings contained therein, and the summary reports on the HLMD, including the guidance contained therein</p>');
                 var info = $('<p class="subinfo">Mandate: 9/CMA.3 paragraph 12</p>');
+                return mysvgdiv.append(milestone)
+                    .append(event)
+                    .append(text)
+                    .append(info)
+            },
+        });
+
+        $('#ted_annual_report_22q4').popover({
+            placement: 'right',
+            trigger: 'hover',
+            html: true,
+            content: function () {
+                var mysvgdiv = $('<div class="popup" padding:5px"></div>');
+                var milestone = $('<div class="popup_report">Report</div>')
+                var event = $('<div class="popup_event">COP27/CMA4</div>')
+                var text = $('<p class="popup_p">The co-chairs of the ad hoc work programme are requested to prepare an annual report on the work conducted, including a summary and key findings of the technical expert dialogues for consideration by the CMA</p>');
+                var info = $('<p class="subinfo">Mandate: 9/CMA.3 paragraph 9</p>');
                 return mysvgdiv.append(milestone)
                     .append(event)
                     .append(text)

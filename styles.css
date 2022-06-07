@@ -413,6 +413,10 @@ td:empty {
         font-size: .65rem !important;
     }
 
+    .popup {
+        font-size: .6rem;
+    }
+
     .legend div {
         font-size: .75rem;
         padding: 5px;
